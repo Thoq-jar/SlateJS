@@ -1,0 +1,20 @@
+{
+  "name": "slate",
+  "version": "1.0.0",
+  "description": "Web Server",
+  "main": "slate.js",
+  "scripts": {
+    "start": "clear && node slate.js",
+    "build": "npm install"
+  },
+  "keywords": [],
+  "author": "Tristan @ SapphireAI",
+  "license": "https://raw.githubusercontent.com/Thoq-jar/Thoq-License/main/License",
+  "dependencies": {
+    "chokidar": "^3.6.0",
+    "mime-types": "^2.1.35",
+    "sse": "^0.0.8",
+    "sse-stream": "^0.0.5",
+    "ws": "^8.17.0"
+  }
+}

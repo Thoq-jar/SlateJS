@@ -1,0 +1,3 @@
+new slate(DemoApp) {
+    {PORT=(80) | PORTS=(443) | TEMPLATE=('index.html) | SRC=(/) | STYLES=(css/styles.css) | APP=(js/app.js)}
+}
