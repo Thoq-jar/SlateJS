@@ -4,8 +4,9 @@
   "description": "Web Server",
   "main": "slate.js",
   "scripts": {
-    "start": "clear && node slate.js",
-    "build": "npm install"
+    "start": "cls && node slate.js",
+    "build": "npm install",
+    "repair": "npm install && npm fund && npm audit fix"
   },
   "keywords": [],
   "author": "Tristan @ SapphireAI",
