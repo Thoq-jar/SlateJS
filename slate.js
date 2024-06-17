@@ -138,7 +138,7 @@ function startServer() {
         }
 
         if (req.url === 'favicon.ico') {
-            const iconPath = path.join(__dirname, config.ICON);
+            const iconPath = path.join(__dirname, config.FAVICON);
             fs.readFile(iconPath, 'binary', (err, data) => {
                 if (err) {
                     res.writeHead(404);
@@ -244,10 +244,10 @@ function startServer() {
         console.log(' ');
     });
 
-    servers.listen(config.PORTS, () => {
+    servers.listen(config.PORT_SECURE, () => {
         console.log('[Slate] → Secure Server Running...');
-        console.log(`[Slate] → Secure Local server running at https://localhost:${config.PORTS}/`);
-        console.log(`[Slate] → Secure Network server running at https://${getInternalIP()}:${config.PORTS}/`);
+        console.log(`[Slate] → Secure Local server running at https://localhost:${config.PORT_SECURE}/`);
+        console.log(`[Slate] → Secure Network server running at https://${getInternalIP()}:${config.PORT_SECURE}/`);
         console.log(' ');
     });
 
