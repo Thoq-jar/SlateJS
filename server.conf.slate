@@ -1,3 +1,16 @@
-new slate(DemoApp) {
-    {PORT=(80) | PORTS=(443) | TEMPLATE=('index.html) | SRC=(/) | STYLES=(css/styles.css) | APP=(js/app.js)}
+include slate
+
+! Slate Demo Config
+
+while (slate) {
+    new slateserver(DemoApp) {
+        SRC=(/)
+        PORT=(80)
+        PORT_SECURE=(443)
+        TEMPLATE=(index.html)
+        STYLES=(css/styles.css)
+        APP=(js/app.js)
+        FAVICON=(favicon.ico)
+    }
+    return 0
 }
